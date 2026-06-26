@@ -1,15 +1,15 @@
 :root {
-  --warna-utama:     #0F3C65;
-  --warna-aksen:     #1A5490;
-  --warna-gelap:     #FFF2BA;
-  --warna-kartu:     #FFFADC;
-  --warna-teks:      #0F3C65;
-  --warna-teks-muda: #2A5F8F;
-  --warna-border:    #D4C97A;
+  --warna-utama:     #AC080E;
+  --warna-aksen:     #EE0A0C;
+  --warna-gelap:     #2D0007;
+  --warna-kartu:     #3D0009;
+  --warna-teks:      #FFF0F0;
+  --warna-teks-muda: #FFCCCC;
+  --warna-border:    #6B0010;
   --font-judul: 'Poppins', sans-serif;
   --font-isi:   'Inter', sans-serif;
   --radius: 16px;
-  --shadow: 0 4px 24px rgba(15, 60, 101, 0.15);
+  --shadow: 0 4px 24px rgba(172, 8, 14, 0.35);
 }
 
 *, *::before, *::after {
@@ -36,7 +36,7 @@ img, video {
 }
 
 a {
-  color: var(--warna-aksen);
+  color: #FF6B6B;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ h1, h2, h3 {
   font-family: var(--font-judul);
   font-weight: 700;
   line-height: 1.2;
-  color: var(--warna-utama);
+  color: var(--warna-teks);
 }
 
 h1 { font-size: clamp(2rem, 5vw, 3rem); }
@@ -75,7 +75,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(255, 242, 186, 0.92);
+  background-color: rgba(45, 0, 7, 0.93);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--warna-border);
 }
@@ -93,12 +93,12 @@ header {
   font-family: var(--font-judul);
   font-size: 1.5rem;
   font-weight: 800;
-  color: var(--warna-utama);
+  color: var(--warna-teks);
   text-decoration: none;
 }
 
 .logo span {
-  color: #1A5490;
+  color: #FF6B6B;
 }
 
 nav ul {
@@ -117,7 +117,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: var(--warna-utama);
-  color: #FFF2BA;
+  color: white;
   text-decoration: none;
 }
 
@@ -134,7 +134,7 @@ nav ul li a:hover {
   width: 500px;
   height: 500px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(15, 60, 101, 0.1), transparent 70%);
+  background: radial-gradient(circle, rgba(238, 10, 12, 0.15), transparent 70%);
   right: -100px;
   top: 50%;
   transform: translateY(-50%);
@@ -160,7 +160,7 @@ nav ul li a:hover {
 .hero-text h2 {
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--warna-aksen);
+  color: #FF8888;
   margin-bottom: 16px;
 }
 
@@ -171,17 +171,17 @@ nav ul li a:hover {
 
 .btn-hero {
   display: inline-block;
-  background-color: var(--warna-utama);
-  color: #FFF2BA;
+  background: linear-gradient(135deg, #AC080E, #EE0A0C);
+  color: white;
   padding: 12px 28px;
   border-radius: 999px;
   font-weight: 600;
   font-family: var(--font-judul);
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .btn-hero:hover {
-  background-color: #0a2a47;
+  opacity: 0.85;
   transform: translateY(-2px);
   text-decoration: none;
 }
@@ -195,8 +195,8 @@ nav ul li a:hover {
   height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid var(--warna-utama);
-  box-shadow: 0 0 40px rgba(15, 60, 101, 0.2);
+  border: 4px solid #AC080E;
+  box-shadow: 0 0 50px rgba(238, 10, 12, 0.25);
 }
 
 .about-container {
@@ -266,7 +266,7 @@ nav ul li a:hover {
 
 .profile-table td:first-child {
   font-weight: 600;
-  color: var(--warna-utama);
+  color: var(--warna-teks);
   white-space: nowrap;
   padding-right: 16px;
 }
@@ -279,9 +279,9 @@ nav ul li a:hover {
 }
 
 .interest-tags span {
-  background-color: rgba(15, 60, 101, 0.1);
-  color: var(--warna-utama);
-  border: 1px solid rgba(15, 60, 101, 0.3);
+  background-color: rgba(172, 8, 14, 0.3);
+  color: #FFAAAA;
+  border: 1px solid #6B0010;
   padding: 4px 12px;
   border-radius: 999px;
   font-size: 0.8rem;
@@ -293,7 +293,7 @@ nav ul li a:hover {
 }
 
 .badge-card {
-  background: linear-gradient(135deg, #0F3C65, #1A5490);
+  background: linear-gradient(135deg, #7F0E12, #AC080E);
   padding: 32px 28px;
   border-radius: var(--radius);
   text-align: center;
@@ -304,11 +304,11 @@ nav ul li a:hover {
 .badge-card h3 {
   font-size: 1rem;
   margin-bottom: 8px;
-  color: #FFF2BA;
+  color: white;
 }
 
 .badge-card p {
-  color: rgba(255, 242, 186, 0.75);
+  color: rgba(255, 220, 220, 0.85);
   font-size: 0.85rem;
 }
 
@@ -383,7 +383,7 @@ nav ul li a:hover {
 .video-wrapper {
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background-color: #0F3C65;
+  background-color: #1A0003;
 }
 
 .video-wrapper video {
@@ -428,17 +428,17 @@ nav ul li a:hover {
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 8px;
-  color: var(--warna-utama);
+  color: var(--warna-teks);
 }
 
 .form-group input,
 .form-group textarea {
   width: 100%;
   padding: 12px 16px;
-  background-color: #FFF2BA;
+  background-color: #2D0007;
   border: 1px solid var(--warna-border);
   border-radius: 10px;
-  color: var(--warna-utama);
+  color: var(--warna-teks);
   font-family: var(--font-isi);
   font-size: 0.95rem;
   transition: border-color 0.2s ease;
@@ -447,38 +447,39 @@ nav ul li a:hover {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--warna-utama);
+  border-color: #EE0A0C;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-  color: #A0B4C8;
+  color: #7A3030;
 }
 
 .guestbook button[type="submit"] {
   width: 100%;
   padding: 13px;
-  background-color: var(--warna-utama);
-  color: #FFF2BA;
+  background: linear-gradient(135deg, #AC080E, #EE0A0C);
+  color: white;
   border: none;
   border-radius: 999px;
   font-size: 1rem;
   font-weight: 600;
   font-family: var(--font-judul);
   cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .guestbook button[type="submit"]:hover {
-  background-color: #0a2a47;
+  opacity: 0.85;
   transform: translateY(-2px);
 }
 
 footer {
   text-align: center;
   padding: 40px 24px;
-  background-color: var(--warna-utama);
-  color: rgba(255, 242, 186, 0.8);
+  background-color: #1A0003;
+  border-top: 1px solid var(--warna-border);
+  color: var(--warna-teks-muda);
   font-size: 0.9rem;
 }
 
@@ -487,7 +488,7 @@ footer p {
 }
 
 footer a {
-  color: #FFF2BA;
+  color: #FF8888;
   margin: 0 8px;
 }
 
@@ -552,4 +553,65 @@ footer a:hover {
   .guestbook {
     padding: 24px 16px;
   }
+}
+
+@import url('Asset/Foto/background.jpeg');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    width:100%;
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("images/background.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+    max-width:700px;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    line-height:35px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#ff2d2d;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff5555;
+    transform:translateY(-5px);
+    box-shadow:0 0 20px rgba(255,45,45,.5);
 }
